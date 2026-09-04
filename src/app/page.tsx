@@ -305,8 +305,8 @@ export default function LiveSearchPage() {
           </div>
         )}
 
-        {/* Results Area */}
-        <div className="max-h-[500px] overflow-y-auto p-3 sm:p-5 space-y-6 divide-y divide-slate-100">
+        {/* Results Area with clean scrolling */}
+        <div className="overflow-y-auto max-h-[55vh] min-h-[360px] p-3 sm:p-5 space-y-6 divide-y divide-slate-100 scroll-smooth">
           {totalResults === 0 ? (
             /* Empty State */
             <div className="py-14 text-center">
